@@ -9,6 +9,8 @@ client.once('ready', () => {
 client.on('message', message => {
 	if (message.content === '!ping') {
 		message.channel.send('Pong.');
+	} else if (message.content === 'xd') {
+		message.channel.send(':banana:');
 	}
 });
 // THIS  MUST  BE  THIS  WAY
