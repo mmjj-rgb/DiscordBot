@@ -7,6 +7,7 @@ const prefix = require('./config.json');
 const embed = new Discord.RichEmbed()
 
 client.on('ready', () => {
+ 	console.log('Ready!');
 });
 
  
