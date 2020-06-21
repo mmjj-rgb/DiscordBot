@@ -8,12 +8,12 @@ const embed = new Discord.RichEmbed()
 
 client.on('ready', () => {
  	console.log('Ready!');
+     client.channels.cache.get('717435350200352811').send('Hello here!')
 });
 
  
 
 client.on('message', message => {
-    client.channels.cache.get('717435350200352811').send('Hello here!')
     if (message.content === 'config.prefixping') {
 
        message.reply('pong');
