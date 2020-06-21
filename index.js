@@ -20,10 +20,9 @@ client.on('message', message => {
 
        message.reply('pong');
 
-       }
-    if (message.content === 'xd') {
+       } else if (message.content === 'xd') {
 
-       message.reply(':banan:');
+           message.reply(':banan:');
 
        }
 
