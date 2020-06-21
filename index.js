@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+const prefix = require('./config.json');
+
 const embed = new Discord.RichEmbed()
 
 client.on('ready', () => {
@@ -14,7 +16,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === '!ping') {
+    if (message.content === 'config.prefixping') {
 
        message.reply('pong');
 
