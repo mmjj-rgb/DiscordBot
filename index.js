@@ -22,7 +22,7 @@ client.on('message', message => {
 
        } else if (message.content === 'xd') {
 
-           message.reply(':banan:');
+           message.reply(':banana:');
 
        }
 
