@@ -7,9 +7,14 @@ const prefix = require('./config.json');
 const embed = new Discord.RichEmbed()
 
 client.on('ready', () => {
-
-    console.log('I am ready!');
-
+        setInterval(() => {
+          targetGuild = client.guilds.get('GUILD ID HERE')
+          if(targetGuild) {
+              client.user.setPresence({ game: { name: 'Jestem na : 'client.guilds.size + ' serwerach!', type: 'WATCHING' }, status: 'dnd'  })
+                    .then(console.log)
+                    .catch(console.error);
+          }
+    }, 1000 * 60 * 5);
 });
 
  
