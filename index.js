@@ -15,7 +15,7 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-
+    client.channels.get('717435350200352811').send('Hello here!');
     if (message.content === 'config.prefixping') {
 
        message.reply('pong');
