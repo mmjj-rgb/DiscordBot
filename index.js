@@ -8,7 +8,6 @@ const embed = new Discord.RichEmbed()
 
 client.on('ready', () => {
  	console.log('Ready!');
-     client.channels.cache.get('717435350200352811').send('Hello here!')
 });
 
  
